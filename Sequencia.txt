@@ -1,0 +1,22 @@
+1) Criei VM ubuntu (1Gb Ram, 1vCPU, 40GB SSD) na AWS
+2) Conectei via SSH
+> sudo su
+> apt update
+> apt upgrade
+> apt install nginx
+> apt install docker.io
+> git clone https://github.com/szalbuque/javascriptDOM.git
+
+3) testar o nginx:
+navegador da minha máquina, acessei http://<ipdoservidor>
+apareceu a página padrão do nginx
+
+4) movi o site para /var/www/todolist
+
+Seguindo os passos de configuração do NGINX do site: https://access.redhat.com/documentation/pt-br/red_hat_enterprise_linux/8/html/deploying_different_types_of_servers/configuring-nginx-as-a-web-server-that-provides-different-content-for-different-domains_setting-up-and-configuring-nginx
+
+- instalei o policycoreutils-python-utils para executar os comandos restorecon
+
+o passo (Configurar o contexto httpd_sys_content_t em ambos os diretórios raiz:) deu erro
+
+
